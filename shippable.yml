@@ -2,7 +2,7 @@ language: python
 python:
  - "2.7"
 before_install:
- - cp elasticsearch.yml /etc/elasticsearch/elasticsearch.yml 
+ - sudo cp elasticsearch.yml /etc/elasticsearch/elasticsearch.yml 
 install: pip install --use-mirrors -r requirements.txt
 script:
  - /usr/share/elasticsearch/bin/elasticsearch &
