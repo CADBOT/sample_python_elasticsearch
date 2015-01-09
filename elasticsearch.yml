@@ -1,1 +1,1 @@
-cluster.name: my-cluster
+node.name: 'my-node'
