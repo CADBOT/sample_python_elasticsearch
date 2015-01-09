@@ -5,7 +5,7 @@ before_install:
  - sudo cp elasticsearch.yml /etc/elasticsearch/elasticsearch.yml 
 install: pip install --use-mirrors -r requirements.txt
 script:
- - /usr/share/elasticsearch/bin/elasticsearch &
+ - sudo /usr/share/elasticsearch/bin/elasticsearch &
  - sleep 10
  - python sample.py
 notifications:
